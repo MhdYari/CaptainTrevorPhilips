@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BAckgroundScroll : MonoBehaviour
+public class BackgroundScroll : MonoBehaviour
 {
+    public Renderer meshRender;
+    public float speed = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,7 @@ public class BAckgroundScroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        meshRender.material.mainTextureOffset += new Vector2(0, speed * Time.deltaTime);
     }
 }
+
