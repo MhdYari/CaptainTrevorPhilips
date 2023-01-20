@@ -1,2 +1,2 @@
 # CaptainTrevorPhilips
-A Plane Shooting Game For Android
+A Plane Shooting Game For Windows/Mac/Linux
