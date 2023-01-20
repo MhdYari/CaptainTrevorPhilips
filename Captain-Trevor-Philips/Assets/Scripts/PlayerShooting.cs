@@ -7,31 +7,31 @@ public class PlayerShooting : MonoBehaviour
     public GameObject playerBullets;
     public Transform spawnPoint1;
     public Transform spawnPoint2;
-    public float bulletSpawnTime = 1f;
+    public float playerBulletSpawnTime = 1f;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Shoot());
+        StartCoroutine(PlayerShoot());
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+          
     }
 
-    void Fire()
+    void PlayerFire()
     {
         Instantiate(playerBullets, spawnPoint1.position, Quaternion.identity);                        
         Instantiate(playerBullets, spawnPoint2.position, Quaternion.identity);
     }
 
-    IEnumerator Shoot()
+    IEnumerator PlayerShoot()
     {
         while (true)
         {
-            yield return new WaitForSeconds(bulletSpawnTime);
-            Fire();
+            yield return new WaitForSeconds(playerBulletSpawnTime);
+            PlayerFire();
         }
     }
 }
