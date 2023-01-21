@@ -128,6 +128,7 @@ MonoBehaviour:
   enemyBulletSpawnTime: 0.5
   speed: 3
   enemyExplosionPrefab: {fileID: 5357667415545110123, guid: f75cb8bd1a4099d4e8e440cfa8a3539d, type: 3}
+  coinPrefabs: {fileID: 4711433246962844317, guid: 1be6d1d6357fcff4ea2e3ae6bae48f5c, type: 3}
 --- !u!68 &6581574521937129751
 EdgeCollider2D:
   m_ObjectHideFlags: 0

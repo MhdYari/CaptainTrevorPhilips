@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3971150925807234669}
   - component: {fileID: 3971150925807234670}
   - component: {fileID: 3971150925807234667}
-  - component: {fileID: 3971150925807234668}
   m_Layer: 0
   m_Name: Enemy Plane2
   m_TagString: Untagged
@@ -181,24 +180,7 @@ MonoBehaviour:
   enemyBulletSpawnTime: 0.5
   speed: 3
   enemyExplosionPrefab: {fileID: 5357667415545110123, guid: f75cb8bd1a4099d4e8e440cfa8a3539d, type: 3}
---- !u!114 &3971150925807234668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3971150925807234658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 225247db9ec0887438dca428e6301cb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyBullets: {fileID: 6337906065241258247, guid: 6e6630ad85fddfe419847ad129db8f52, type: 3}
-  gunPoint1: {fileID: 3971150927460306354}
-  gunPoint2: {fileID: 3971150926706371350}
-  enemyBulletSpawnTime: 0.5
-  speed: 3
-  enemyExplosionPrefab: {fileID: 5357667415545110123, guid: f75cb8bd1a4099d4e8e440cfa8a3539d, type: 3}
+  coinPrefabs: {fileID: 4711433246962844317, guid: 1be6d1d6357fcff4ea2e3ae6bae48f5c, type: 3}
 --- !u!1 &3971150926706371351
 GameObject:
   m_ObjectHideFlags: 0

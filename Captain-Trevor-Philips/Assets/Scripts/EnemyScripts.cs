@@ -10,6 +10,7 @@ public class EnemyScripts : MonoBehaviour
     public float enemyBulletSpawnTime = 0.5f;
     public float speed = 3f;
     public GameObject enemyExplosionPrefab;
+    public GameObject coinPrefabs;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,8 @@ public class EnemyScripts : MonoBehaviour
             Destroy(gameObject);
             GameObject enemyExplosion = Instantiate(enemyExplosionPrefab, transform.position, Quaternion.identity);
             Destroy(enemyExplosion, 0.5f);
+            Instantiate(coinPrefabs, transform.position, Quaternion.identity);
+
         }
     }
 
